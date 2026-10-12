@@ -1,0 +1,209 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #12263f;
+}
+
+
+.login-page {
+  min-height: 100vh;
+  display: flex;                 
+  justify-content: center;
+  align-items: center;           
+  background-color: #e6edf6;
+}
+
+.login-box {
+  width: 320px;
+  padding: 28px 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h1 {
+  font-size: 20px;
+  color:  #12263f;
+}
+
+.login-box .subtitle {
+  font-size: 12px;
+  color: #555;
+  margin: 4px 0 18px;
+}
+
+.login-box label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 9px 10px;
+  margin-bottom: 14px;
+  border: 1px solid #cdd5df;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #ffffff;
+  outline: none;
+}
+
+.login-box input:focus {
+  background-color: #dff1ff;
+  border-color: #2a6496;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a6496;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar {
+  position: fixed;               
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 14px 24px;
+  background-color: #12263f;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 6px 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background: #7fd0ff;
+  color: #12263f;
+}
+
+main {
+  padding: 70px 24px 24px;       
+}
+
+section {
+  scroll-margin-top: 70px;       
+}
+
+.hero {
+  height: 320px;
+  border-radius: 12px;
+  background-color: #12263f;
+  background-image: url("img/hero.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.hero h2 {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.hero .highlight {
+  color: #7fd0ff;
+  font-size: 40px;
+}
+
+/* ===== 3. COLLECTIONS ===== */
+.section-title {
+  margin: 28px 0 14px;
+  font-size: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* b. ukuran gambar seragam */
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.card p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero .highlight {
+    font-size: 30px;
+    display: block;
+  }
+}
